@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 
-# Matrix sizes
+
 sizes = [64, 128, 256, 512, 1024]
 
-# Sample data for C++ and Python (replace these with your actual measured data)
+
 cpp_total_times_int = [0.135, 0.165, 0.275, 1.219, 10.111]
 cpp_meat_times_int = [0.002, 0.019, 0.146, 1.091, 9.976]
 python_total_times_int = [0.158, 0.493, 2.422, 16.630, 123.886]
@@ -34,10 +34,10 @@ python_sys_times_int = [0.03,0,0.03,0.015,0.109]
 
 
 
-# Plotting the total execution times
+
 plt.figure(figsize=(14, 7))
 
-# Total Execution Time
+
 plt.subplot(1, 2, 1)
 plt.plot(sizes, cpp_total_times_double, label='C++ Total execution Time double', marker='o', color='blue')
 plt.plot(sizes, python_total_times_double, label='Python Total execution Time double ', marker='o', color='green')
@@ -46,7 +46,7 @@ plt.ylabel('Total execution Time (seconds)')
 plt.title('Total execution Time vs. Matrix Size')
 plt.legend()
 
-# Meat Portion Time
+
 plt.subplot(1, 2, 2)
 plt.plot(sizes, cpp_meat_times_double, label='C++ Meat Time double ', marker='o', color='red')
 plt.plot(sizes, python_meat_times_double, label='Python Meat Time double ', marker='o', color='orange')
