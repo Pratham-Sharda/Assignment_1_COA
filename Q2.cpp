@@ -38,7 +38,7 @@ void matrixMultiplication(int N) {
     double total_time = ((double)(total_end - total_start)) / CLOCKS_PER_SEC;
     double meat_time = ((double)(meat_end - meat_start)) / CLOCKS_PER_SEC;
 
-    // Print the results
+
     cout << "Time taken for N=" << N << " with " << (is_same<T, int>::value ? "int" : "double") << ":" << endl;
     cout << "Total program execution time: " << fixed << setprecision(5) << total_time << " seconds" << endl;
     cout << "Meat portion (matrix multiplication) time: " << fixed << setprecision(5) << meat_time << " seconds" << endl;
